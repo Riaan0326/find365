@@ -31,6 +31,14 @@ export interface ServiceProvider {
   'lat'?: number;
   'lng'?: number;
   'lastLoginGPS'?: string;
+  // Legacy compatibility
+  name?: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  surname?: string;
+  serviceTypes?: string[];
+  'sp-code'?: string;
 }
 
 export const spDatabase = {
@@ -165,7 +173,7 @@ export const spDatabase = {
 };
 
 export const saveServiceProvider = spDatabase.registerServiceProvider;
-export const validateServiceProvider = async (phone: string, password: string) => {
+export const validateServiceProvider = async (phone: string, _password: string) => {
   const providers = await spDatabase.getAllServiceProviders();
   return providers.find(p => p['driver-phone'] === phone);
 };

@@ -32,6 +32,16 @@ export interface ClientRequest {
   'final-price'?: number;
   'payment-status'?: string;
   'completion-time'?: string;
+  // Legacy compatibility
+  fullName?: string;
+  phone?: string;
+  transportType?: string;
+  pickupLatitude?: number;
+  pickupLongitude?: number;
+  clickCount?: number;
+  createdAt?: string;
+  timestamp?: string;
+  'client-request-id'?: string;
 }
 
 export const database = {
