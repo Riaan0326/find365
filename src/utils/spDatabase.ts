@@ -163,3 +163,9 @@ export const spDatabase = {
     }
   }
 };
+
+export const saveServiceProvider = spDatabase.registerServiceProvider;
+export const validateServiceProvider = async (phone: string, password: string) => {
+  const providers = await spDatabase.getAllServiceProviders();
+  return providers.find(p => p['driver-phone'] === phone);
+};

@@ -130,3 +130,13 @@ export const database = {
     }
   }
 };
+
+export const saveClientRequest = database.saveClientRequest;
+export const getClientRequests = database.getAllClientRequests;
+
+export const serviceTypeMapping = {
+  'ride': 'Ride',
+  'delivery': 'Delivery', 
+  'assistance': 'Assistance',
+  'tour': 'Tour'
+};
