@@ -39,6 +39,8 @@ export interface ClientRequest {
   destination?: string;
   city?: string;
   suburb?: string;
+  destinationLatitude?: number;
+  destinationLongitude?: number;
   transportType?: string;
   pickupLatitude?: number;
   pickupLongitude?: number;

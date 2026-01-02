@@ -8,7 +8,6 @@
     "types": ["vite/client", "node"],
     "skipLibCheck": true,
     "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
