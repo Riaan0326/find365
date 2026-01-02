@@ -35,6 +35,8 @@ export interface ClientRequest {
   // Legacy compatibility
   fullName?: string;
   phone?: string;
+  pickup?: string;
+  destination?: string;
   transportType?: string;
   pickupLatitude?: number;
   pickupLongitude?: number;

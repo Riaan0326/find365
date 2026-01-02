@@ -37,6 +37,7 @@ export interface ServiceProvider {
   phone?: string;
   address?: string;
   surname?: string;
+  password?: string;
   serviceTypes?: string[];
   'sp-code'?: string;
 }
