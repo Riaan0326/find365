@@ -37,6 +37,8 @@ export interface ClientRequest {
   phone?: string;
   pickup?: string;
   destination?: string;
+  city?: string;
+  suburb?: string;
   transportType?: string;
   pickupLatitude?: number;
   pickupLongitude?: number;
