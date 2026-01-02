@@ -1,0 +1,19 @@
+{
+  "name": "rides911-fcm-server",
+  "version": "1.0.0",
+  "description": "FCM notification server for Rides911",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "nodemon api.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1404.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
